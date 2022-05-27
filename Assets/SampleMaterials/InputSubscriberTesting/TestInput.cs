@@ -15,30 +15,14 @@ public class @TestInput : IInputActionCollection, IDisposable
     ""name"": ""TestInput"",
     ""maps"": [
         {
-            ""name"": ""DefaultActions"",
-            ""id"": ""da4f6f0f-91dd-48c7-9c03-b6b9ef0b60a9"",
+            ""name"": ""TestInputs"",
+            ""id"": ""5b556e6d-352c-476e-8ccd-6fc7a76040de"",
             ""actions"": [
                 {
                     ""name"": ""WASD"",
                     ""type"": ""Value"",
-                    ""id"": ""7f6c3500-e2e3-41cb-8df8-3c8090365b49"",
+                    ""id"": ""56bbfdc6-4a75-4627-9b57-523a39df3242"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Space"",
-                    ""type"": ""Value"",
-                    ""id"": ""9440daf7-7486-40a2-9c18-a21bd91a2794"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Esc"",
-                    ""type"": ""Value"",
-                    ""id"": ""7dbb19e1-13eb-401b-ae85-2afad447c806"",
-                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -46,7 +30,7 @@ public class @TestInput : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""2D Vector"",
-                    ""id"": ""ae8ad5b4-1b7d-4661-a603-d00619aef7fd"",
+                    ""id"": ""d14e888d-fb5e-4752-86e0-41dd97e84e5e"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -57,77 +41,55 @@ public class @TestInput : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""eae7f329-0b00-4add-80ff-5e77bb784ed8"",
+                    ""id"": ""19487955-76ba-4578-9a9d-a1f8dee2dc94"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""KeyboardOnly"",
+                    ""groups"": ""KeyboardTest"",
                     ""action"": ""WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""ce02b4b3-da59-4835-ba2f-2049fd8bbd42"",
+                    ""id"": ""e5c68acf-8fba-4351-8d5b-d910befa9a10"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""KeyboardOnly"",
+                    ""groups"": ""KeyboardTest"",
                     ""action"": ""WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""ebc93ea9-5237-4607-9345-ee0c38714518"",
+                    ""id"": ""b1bbbe28-d518-413c-985b-1d8eda61597b"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""KeyboardOnly"",
+                    ""groups"": ""KeyboardTest"",
                     ""action"": ""WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""5cd25735-1052-4738-b7b1-9718d989aed1"",
+                    ""id"": ""b4985851-8770-403e-8a8b-5300d4cf7944"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""KeyboardOnly"",
+                    ""groups"": ""KeyboardTest"",
                     ""action"": ""WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d263a149-0a45-4d3d-8b8f-96d88dcda5ef"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KeyboardOnly"",
-                    ""action"": ""Space"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""66fde46f-fc01-4a45-b90b-f4350edb1814"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KeyboardOnly"",
-                    ""action"": ""Esc"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""KeyboardOnly"",
-            ""bindingGroup"": ""KeyboardOnly"",
+            ""name"": ""KeyboardTest"",
+            ""bindingGroup"": ""KeyboardTest"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
@@ -138,11 +100,9 @@ public class @TestInput : IInputActionCollection, IDisposable
         }
     ]
 }");
-        // DefaultActions
-        m_DefaultActions = asset.FindActionMap("DefaultActions", throwIfNotFound: true);
-        m_DefaultActions_WASD = m_DefaultActions.FindAction("WASD", throwIfNotFound: true);
-        m_DefaultActions_Space = m_DefaultActions.FindAction("Space", throwIfNotFound: true);
-        m_DefaultActions_Esc = m_DefaultActions.FindAction("Esc", throwIfNotFound: true);
+        // TestInputs
+        m_TestInputs = asset.FindActionMap("TestInputs", throwIfNotFound: true);
+        m_TestInputs_WASD = m_TestInputs.FindAction("WASD", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -189,67 +149,49 @@ public class @TestInput : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // DefaultActions
-    private readonly InputActionMap m_DefaultActions;
-    private IDefaultActionsActions m_DefaultActionsActionsCallbackInterface;
-    private readonly InputAction m_DefaultActions_WASD;
-    private readonly InputAction m_DefaultActions_Space;
-    private readonly InputAction m_DefaultActions_Esc;
-    public struct DefaultActionsActions
+    // TestInputs
+    private readonly InputActionMap m_TestInputs;
+    private ITestInputsActions m_TestInputsActionsCallbackInterface;
+    private readonly InputAction m_TestInputs_WASD;
+    public struct TestInputsActions
     {
         private @TestInput m_Wrapper;
-        public DefaultActionsActions(@TestInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @WASD => m_Wrapper.m_DefaultActions_WASD;
-        public InputAction @Space => m_Wrapper.m_DefaultActions_Space;
-        public InputAction @Esc => m_Wrapper.m_DefaultActions_Esc;
-        public InputActionMap Get() { return m_Wrapper.m_DefaultActions; }
+        public TestInputsActions(@TestInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @WASD => m_Wrapper.m_TestInputs_WASD;
+        public InputActionMap Get() { return m_Wrapper.m_TestInputs; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(DefaultActionsActions set) { return set.Get(); }
-        public void SetCallbacks(IDefaultActionsActions instance)
+        public static implicit operator InputActionMap(TestInputsActions set) { return set.Get(); }
+        public void SetCallbacks(ITestInputsActions instance)
         {
-            if (m_Wrapper.m_DefaultActionsActionsCallbackInterface != null)
+            if (m_Wrapper.m_TestInputsActionsCallbackInterface != null)
             {
-                @WASD.started -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnWASD;
-                @WASD.performed -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnWASD;
-                @WASD.canceled -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnWASD;
-                @Space.started -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnSpace;
-                @Space.performed -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnSpace;
-                @Space.canceled -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnSpace;
-                @Esc.started -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnEsc;
-                @Esc.performed -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnEsc;
-                @Esc.canceled -= m_Wrapper.m_DefaultActionsActionsCallbackInterface.OnEsc;
+                @WASD.started -= m_Wrapper.m_TestInputsActionsCallbackInterface.OnWASD;
+                @WASD.performed -= m_Wrapper.m_TestInputsActionsCallbackInterface.OnWASD;
+                @WASD.canceled -= m_Wrapper.m_TestInputsActionsCallbackInterface.OnWASD;
             }
-            m_Wrapper.m_DefaultActionsActionsCallbackInterface = instance;
+            m_Wrapper.m_TestInputsActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @WASD.started += instance.OnWASD;
                 @WASD.performed += instance.OnWASD;
                 @WASD.canceled += instance.OnWASD;
-                @Space.started += instance.OnSpace;
-                @Space.performed += instance.OnSpace;
-                @Space.canceled += instance.OnSpace;
-                @Esc.started += instance.OnEsc;
-                @Esc.performed += instance.OnEsc;
-                @Esc.canceled += instance.OnEsc;
             }
         }
     }
-    public DefaultActionsActions @DefaultActions => new DefaultActionsActions(this);
-    private int m_KeyboardOnlySchemeIndex = -1;
-    public InputControlScheme KeyboardOnlyScheme
+    public TestInputsActions @TestInputs => new TestInputsActions(this);
+    private int m_KeyboardTestSchemeIndex = -1;
+    public InputControlScheme KeyboardTestScheme
     {
         get
         {
-            if (m_KeyboardOnlySchemeIndex == -1) m_KeyboardOnlySchemeIndex = asset.FindControlSchemeIndex("KeyboardOnly");
-            return asset.controlSchemes[m_KeyboardOnlySchemeIndex];
+            if (m_KeyboardTestSchemeIndex == -1) m_KeyboardTestSchemeIndex = asset.FindControlSchemeIndex("KeyboardTest");
+            return asset.controlSchemes[m_KeyboardTestSchemeIndex];
         }
     }
-    public interface IDefaultActionsActions
+    public interface ITestInputsActions
     {
         void OnWASD(InputAction.CallbackContext context);
-        void OnSpace(InputAction.CallbackContext context);
-        void OnEsc(InputAction.CallbackContext context);
     }
 }

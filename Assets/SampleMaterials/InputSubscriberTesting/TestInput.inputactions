@@ -2,30 +2,14 @@
     "name": "TestInput",
     "maps": [
         {
-            "name": "DefaultActions",
-            "id": "da4f6f0f-91dd-48c7-9c03-b6b9ef0b60a9",
+            "name": "TestInputs",
+            "id": "5b556e6d-352c-476e-8ccd-6fc7a76040de",
             "actions": [
                 {
                     "name": "WASD",
                     "type": "Value",
-                    "id": "7f6c3500-e2e3-41cb-8df8-3c8090365b49",
+                    "id": "56bbfdc6-4a75-4627-9b57-523a39df3242",
                     "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Space",
-                    "type": "Value",
-                    "id": "9440daf7-7486-40a2-9c18-a21bd91a2794",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Esc",
-                    "type": "Value",
-                    "id": "7dbb19e1-13eb-401b-ae85-2afad447c806",
-                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 }
@@ -33,7 +17,7 @@
             "bindings": [
                 {
                     "name": "2D Vector",
-                    "id": "ae8ad5b4-1b7d-4661-a603-d00619aef7fd",
+                    "id": "d14e888d-fb5e-4752-86e0-41dd97e84e5e",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -44,77 +28,55 @@
                 },
                 {
                     "name": "up",
-                    "id": "eae7f329-0b00-4add-80ff-5e77bb784ed8",
+                    "id": "19487955-76ba-4578-9a9d-a1f8dee2dc94",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardOnly",
+                    "groups": "KeyboardTest",
                     "action": "WASD",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "ce02b4b3-da59-4835-ba2f-2049fd8bbd42",
+                    "id": "e5c68acf-8fba-4351-8d5b-d910befa9a10",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardOnly",
+                    "groups": "KeyboardTest",
                     "action": "WASD",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "ebc93ea9-5237-4607-9345-ee0c38714518",
+                    "id": "b1bbbe28-d518-413c-985b-1d8eda61597b",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardOnly",
+                    "groups": "KeyboardTest",
                     "action": "WASD",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "5cd25735-1052-4738-b7b1-9718d989aed1",
+                    "id": "b4985851-8770-403e-8a8b-5300d4cf7944",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardOnly",
+                    "groups": "KeyboardTest",
                     "action": "WASD",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "d263a149-0a45-4d3d-8b8f-96d88dcda5ef",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardOnly",
-                    "action": "Space",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "66fde46f-fc01-4a45-b90b-f4350edb1814",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardOnly",
-                    "action": "Esc",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
     ],
     "controlSchemes": [
         {
-            "name": "KeyboardOnly",
-            "bindingGroup": "KeyboardOnly",
+            "name": "KeyboardTest",
+            "bindingGroup": "KeyboardTest",
             "devices": [
                 {
                     "devicePath": "<Keyboard>",

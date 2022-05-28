@@ -18,5 +18,7 @@ namespace DynamicInput
         public delegate void Vector3Action(Vector3 context);
 
         public delegate void Vector4Action(Vector4 context);
+
+        public delegate void ActionTest();
     }
 }

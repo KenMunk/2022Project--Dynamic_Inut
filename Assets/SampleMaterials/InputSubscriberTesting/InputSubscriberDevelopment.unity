@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 1308133348}
   - component: {fileID: 1308133347}
   - component: {fileID: 1308133346}
+  - component: {fileID: 1308133352}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -266,6 +267,42 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 56bbfdc6-4a75-4627-9b57-523a39df3242
     m_ActionName: TestInputs/WASD[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5312cee8-6a8b-4867-8601-f3b2d5903bd9
+    m_ActionName: TestInputs/Num1[/Keyboard/1,/Keyboard/numpad1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 99c4748c-29b1-43b6-8c59-408c92853e61
+    m_ActionName: TestInputs/Num2[/Keyboard/2,/Keyboard/numpad2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b7f7d101-8954-466a-bff0-8a08a99c6031
+    m_ActionName: TestInputs/Num3[/Keyboard/3,/Keyboard/numpad3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 953e0df2-218f-4c81-8296-f8fcc4da88a0
+    m_ActionName: TestInputs/Num4[/Keyboard/4,/Keyboard/numpad4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f2330043-9ac7-4a58-891a-e2400a9717dd
+    m_ActionName: TestInputs/Num5[/Keyboard/5,/Keyboard/numpad5]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 63c96fdc-bf66-467e-b940-0b0ba09e52bc
+    m_ActionName: TestInputs/Num6[/Keyboard/6,/Keyboard/numpad6]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8b17fcd7-e07f-4799-9293-3b90d5d31c2f
+    m_ActionName: TestInputs/Num7[/Keyboard/7,/Keyboard/numpad7]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 529d414b-e0e7-4328-b354-06fcaf37c301
+    m_ActionName: TestInputs/Num8[/Keyboard/8,/Keyboard/numpad8]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e005eb97-ed93-483d-8941-c5033c811d07
+    m_ActionName: TestInputs/Num9[/Keyboard/9,/Keyboard/numpad9]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: KeyboardTest
   m_DefaultActionMap: TestInputs
@@ -283,6 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6edc6fe2875312f49af8c923705df6b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  watchedAction: 
+  watchedInput: {fileID: 0}
 --- !u!135 &1308133348
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -359,6 +398,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308133352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308133345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713ccbd295a0fb4e97ac84f42c8d51f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchedInput: {fileID: 0}
 --- !u!1 &1862494547
 GameObject:
   m_ObjectHideFlags: 0
